@@ -223,6 +223,9 @@ hr {
 footer {
     padding: 16px 32px;
     background: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
