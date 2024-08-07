@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    --dark: #1F316F;
+    --semi: #1A4870;
+    --light: #5B99C2;
+    --fore: #F9DBBA;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 32px;
+    align-items: center;
+    background: var(--dark);
+}
+
+#header-img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    background-color: var(--fore);
+    padding: 4px;
+    border-radius: 100%;
+}
+
+header h1 {
+    margin-right: 64px;
+    font-size: 16pt;
+    font-weight: 600;
+    color: var(--fore);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+nav h2 {
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+nav h2 a {
+    text-decoration: none;
+    color: var(--fore);
+    padding: 1px 2px;
+}
+
+nav h2:hover a {
+    font-weight: 600;
+    border-bottom: 1px solid var(--fore);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px 32px;
+    flex-grow: 1;
+    background: var(--light);
+}
+
+section {
+    border: 2px solid var(--dark);
+    border-radius: 8px;
+    padding: 8px 16px 16px 16px;
+    background: var(--semi);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#menu {
+    flex: 3;
+}
+
+#order-form {
+    flex: 1;
+}
+
+section h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: var(--fore);
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+article {
+    width: 196px;
+    border: 1px solid var(--fore);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+article h3 {
+    height: 64px;
+    text-align: center;
+    color: var(--fore);
+    font-size: 14pt;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+article p {
+    height: 48px;
+    text-align: justify;
+    color: var(--fore);
+    opacity: 0.8;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1;
+    padding: 0 8px;
+    margin-bottom: 8px;
+}
+
+article span {
+    color: var(--fore);
+    font-size: 10pt;
+    font-weight: 600;
+    font-style: italic;
+    padding: 0 8px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+hr {
+    margin: 8px 0;
+    color: var(--light);
+    opacity: 0.5;
+}
+
+.order-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-card h3 {
+    font-size: 12pt;
+    font-weight: 400;
+    color: var(--fore);
+    line-height: 1;
+}
+
+.order-card div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.order-card div label, 
+.order-card ul li label,
+.order-card span {
+    font-size: 10pt;
+    font-weight: 400;
+    color: var(--fore);
+}
+
+.order-card div input {
+    padding: 1px 0 1px 8px;
+    width: 56px;
+    border: none;
+    border-radius: 2px;
+}
+
+.order-card ul {
+    list-style: none;
+}
+
+.order-card ul li {
+    font-size: 10pt;
+    font-weight: 400;
+    color: var(--fore);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.order-card textarea {
+    border: none;
+    border-radius: 2px;
+    padding: 2px 4px;
+}
+
+footer {
+    padding: 16px 32px;
+    background: var(--dark);
+}
+
+footer p {
+    color: var(--fore);
+    size: 12pt;
+}
+
+footer p a {
+    color: var(--fore);
+    text-decoration: underline;
+    font-weight: 600;
+}
