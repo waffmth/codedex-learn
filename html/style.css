@@ -154,12 +154,6 @@ article span {
     padding: 0 8px;
 }
 
-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 hr {
     margin: 8px 0;
     color: var(--light);
@@ -185,8 +179,7 @@ hr {
     gap: 8px;
 }
 
-.order-card div label, 
-.order-card ul li label,
+.order-card label, 
 .order-card span {
     font-size: 10pt;
     font-weight: 400;
@@ -202,22 +195,34 @@ hr {
 
 .order-card ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .order-card ul li {
-    font-size: 10pt;
-    font-weight: 400;
-    color: var(--fore);
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
+}
+
+.order-card ul li input {
+    cursor: pointer;
 }
 
 .order-card textarea {
     border: none;
     border-radius: 2px;
     padding: 2px 4px;
+}
+
+#order-form form > input {
+    width: 100%;
+    margin-top: 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
 }
 
 footer {
